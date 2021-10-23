@@ -164,7 +164,7 @@ $(document).ready(function() {
         $.ajax({
             'async': false,
             'type': "GET",
-            'url': "//extreme-ip-lookup.com/json/",
+            'url': "http://extreme-ip-lookup.com/json/",
             'success': function (data) {
                 jsonvar = data;
             }
